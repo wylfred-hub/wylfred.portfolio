@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Corps ===== */
+body {
+  background: linear-gradient(to top, #0a205e, #2563eb, #25aceb);
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ===== En-tête ===== */
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(to right, #1e3a8a, #25aceb, #2563eb);
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+
+.part span {
+  display: inline-block;
+  margin-right: 5px;
+  color: #ffae00;
+}
+
+header h2 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #ffae00;
+}
+
+/* ===== Sections générales ===== */
+section {
+  background: #ffffff;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* ===== À propos ===== */
+.about h2 {
+  width: 100%;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  border-bottom: 2px solid #ffae00;
+  padding-bottom: 5px;
+}
+
+.devise {
+  margin-top: 10px;
+  font-weight: bold;
+  display: flex;
+  gap: 20px;
+  color: #1e3a8a;
+}
+.devise span{
+  padding: 3px;
+  background-color: #2563eb;
+  border-radius: 6px;
+  color: #ffae00;
+}
+
+/* ===== Compétences ===== */
+.competence h2 {
+  width: 100%;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  border-bottom: 2px solid #ffae00;
+  padding-bottom: 5px;
+}
+
+.competence ul {
+  margin-bottom: 20px;
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+/* ===== Projets ===== */
+.projet h2 {
+  width: 100%;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  border-bottom: 2px solid #ffae00;
+  padding-bottom: 5px;
+}
+
+.projet-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projet-item {
+  background-color: #e7f0ff;
+  padding: 15px;
+  border-left: 5px solid #1e3a8a;
+  border-right: 5px solid #1e3a8a;
+  border-radius: 8px;
+}
+
+.projet-item span {
+  display: inline-block;
+  margin-right: 10px;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+/* ===== Contact ===== */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact h2 {
+  width: 100%;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  border-bottom: 2px solid #ffae00;
+  padding-bottom: 5px;
+}
+
+.contact-item {
+  flex: 1 0 350px;
+}
+
+.contact-item p {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1rem;
+}
+
+.contact-item a {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  background-color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #003566;
+}
+/* ===== Footer ===== */
+footer {
+  margin-top: 40px;
+  padding: 20px 10px;
+  text-align: center;
+  background-color: #1e3a8a;
+  color: #fff;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+footer p {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about h2{
+    text-align: center;
+  }
+  .competence h2{
+    text-align: center;
+  }
+  .projet h2{
+    text-align: center;
+  }
+
+  .devise {
+    justify-content: center;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact h2 {
+    text-align: center;
+  }
+
+  .contact-item {
+    width: 100%;
+  }
+}
